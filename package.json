@@ -1,0 +1,29 @@
+{
+  "name": "polka-ejs",
+  "version": "1.0.0",
+  "description": "Adds EJS (Embedded JavaScript) template engine support to polka",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freetnt5852/polka-ejs.git"
+  },
+  "keywords": [
+    "ejs",
+    "polka",
+    "embedded",
+    "javascript",
+    "middleware"
+  ],
+  "author": "Free TNT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freetnt5852/polka-ejs/issues"
+  },
+  "homepage": "https://github.com/freetnt5852/polka-ejs#readme",
+  "dependencies": {
+    "ejs": "^2.6.1"
+  }
+}

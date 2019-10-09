@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 
 app.listen(3000);
 ```
-Create a `views/index.js` with the following
+Create a `views/index.ejs` with the following
 ```html
 <html>
   <body>

@@ -35,7 +35,7 @@ Now visiting `http://localhost:3000` will display the number `5` on the page!
 All options with their default values.
 ```js
 app.use(ejs({
-  path: path.join(process.cwd(), "views"),
+  views: path.join(process.cwd(), "views"),
   cache: process.env.NODE_ENV === "production",
   contentType: "text/html",
   status: 200,
@@ -47,7 +47,7 @@ app.use(ejs({
 Options can be overriden per call basis aswell
 ```js
 res.render("index", {
-  path: path.join(__dirname, "secretViewsJustForThisRoute"),
+  views: path.join(__dirname, "secretViewsJustForThisRoute"),
   status: 500,
   contentType: "text/html",
   cache: false,

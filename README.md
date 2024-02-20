@@ -2,11 +2,13 @@
 Adds [ejs](https://ejs.co) template engine support to [polka](https://github.com/lukeed/polka)
 
 ## Install
+
 ```sh
 npm install polka-ejs
 ```
 
 ## Usage
+
 ```js
 const polka = require("polka");
 const ejs = require("polka-ejs");
@@ -21,7 +23,9 @@ app.get("/", (req, res) => {
 
 app.listen(3000);
 ```
+
 Create a `views/index.ejs` with the following
+
 ```html
 <html>
   <body>
@@ -29,10 +33,12 @@ Create a `views/index.ejs` with the following
   </body>
 </html>
 ```
+
 Now visiting `http://localhost:3000` will display the number `5` on the page!
 
 ## Options
 All options with their default values.
+
 ```js
 app.use(ejs({
   views: path.join(process.cwd(), "views"),
@@ -45,6 +51,7 @@ app.use(ejs({
 ```
 
 Options can be overriden per call basis aswell
+
 ```js
 res.render("index", {
   views: path.join(__dirname, "secretViewsJustForThisRoute"),

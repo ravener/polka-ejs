@@ -27,18 +27,23 @@ module.exports = function polkaEjs({
     } = {}) {
       // Add cache option
       options.cache = cache;
+
       // Validate and process input
-      if(isNaN(status)) throw new Error("Status must be a number.");
-      if(typeof file !== "string") throw new Error("File must be a string.");
-      if(!file.endsWith(`.${ext}`)) file = file + `.${ext}`;
+      if (isNaN(status)) throw new Error("Status must be a number.");
+      if (typeof file !== "string") throw new Error("File must be a string.");
+      if (!file.endsWith(`.${ext}`)) file = file + `.${ext}`;
+
       // Render!
       return ejs.renderFile(path.join(views, file), locals, options, (err, html) => {
-        if(err) throw err; // Handle error
+        if (err) throw err; // Handle error
+
         // Send the response
         res.writeHead(status, { "Content-Type": contentType });
+
         return res.end(html);
       });
     };
+    
     // We are done.
     return next();
   };

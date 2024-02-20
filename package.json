@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/freetnt5852/polka-ejs.git"
+    "url": "git+https://github.com/ravener/polka-ejs.git"
   },
   "keywords": [
     "ejs",
@@ -17,13 +17,13 @@
     "javascript",
     "middleware"
   ],
-  "author": "Free TNT",
+  "author": "Ravener",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/freetnt5852/polka-ejs/issues"
+    "url": "https://github.com/ravener/polka-ejs/issues"
   },
-  "homepage": "https://github.com/freetnt5852/polka-ejs#readme",
+  "homepage": "https://github.com/ravener/polka-ejs#readme",
   "dependencies": {
-    "ejs": "^2.6.1"
+    "ejs": "^3.1.9"
   }
 }

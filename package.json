@@ -1,6 +1,6 @@
 {
   "name": "polka-ejs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adds EJS (Embedded JavaScript) template engine support to polka",
   "main": "index.js",
   "scripts": {
